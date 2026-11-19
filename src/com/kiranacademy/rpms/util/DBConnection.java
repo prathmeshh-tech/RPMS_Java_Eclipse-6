@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public final class DBConnection {
 
     private static final String URL =
-            "jdbc:mysql://localhost:3306/recruitment_portal?useSSL=false&serverTimezone=Asia/Kolkata";
+            "jdbc:mysql://localhost:3306/rpms_db?useSSL=false&serverTimezone=Asia/Kolkata";
     private static final String USER = "root";
-    private static final String PASSWORD = "root123"; // Change as per your MySQL setup
+    private static final String PASSWORD = "mint"; // Change as per your MySQL setup
 
     private DBConnection() {}
 
