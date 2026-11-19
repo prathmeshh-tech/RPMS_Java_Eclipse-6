@@ -25,15 +25,15 @@ public class RecruitmentApp {
 
         while (true) {
             System.out.println("\n==================================");
-            System.out.println("RECRUITMENT & PLACEMENT SYSTEM");
+            System.out.println("RECRUITMENT & PLACEMENT MANAGEMENT SYSTEM");
             System.out.println("==================================");
-            System.out.println("1. View Candidates");
-            System.out.println("2. Add Candidate");
-            System.out.println("3. View Open Jobs");
-            System.out.println("4. Apply for Job");
+            System.out.println("1. View All Candidates");
+            System.out.println("2. Register New Candidate");
+            System.out.println("3. View Open Job Openings");
+            System.out.println("4. Apply for a Job");
             System.out.println("5. Candidate Technology Report");
             System.out.println("6. Exit");
-            System.out.print("Enter Choice: ");
+            System.out.print("Enter your Choice: ");
 
             int choice = Integer.parseInt(sc.nextLine());
 
@@ -50,13 +50,13 @@ public class RecruitmentApp {
                         System.out.print("Candidate Code: ");
                         c.setCandidateCode(sc.nextLine());
 
-                        System.out.print("Full Name: ");
+                        System.out.print("Enter Full Name: ");
                         c.setFullName(sc.nextLine());
 
-                        System.out.print("Email: ");
+                        System.out.print("Enter Email: ");
                         c.setEmail(sc.nextLine());
 
-                        System.out.print("Mobile: ");
+                        System.out.print("Enter 10-Digit Mobile Number: ");
                         c.setMobile(sc.nextLine());
 
                         System.out.print("Qualification: ");
@@ -105,7 +105,7 @@ public class RecruitmentApp {
                         break;
 
                     case 6:
-                        System.out.println("Application closed.");
+                        System.out.println("Thank you for using the system. Goodbye!");
                         sc.close();
                         return;
 
